@@ -1,0 +1,6 @@
+<p>post-list works!</p>
+    @for (post of posts; track $index) {
+        <title>{{post.name}}</title>
+        <button [routerLink]="['/post',$index,post.name]">View Info</button>
+        <br><br>
+    }
